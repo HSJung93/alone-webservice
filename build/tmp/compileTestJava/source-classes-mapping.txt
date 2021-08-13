@@ -1,12 +1,12 @@
 com/jojoidu/book/springboot/web/dto/HelloResponseDtoTest.java
  com.jojoidu.book.springboot.web.dto.HelloResponseDtoTest
-com/jojoidu/book/springboot/web/HelloControllerTest.java
- com.jojoidu.book.springboot.web.HelloControllerTest
+com/jojoidu/book/springboot/web/PostsApiControllerTest.java
+ com.jojoidu.book.springboot.web.PostsApiControllerTest
 com/jojoidu/book/springboot/web/IndexControllerTest.java
  com.jojoidu.book.springboot.web.IndexControllerTest
 com/jojoidu/book/springboot/domain/posts/PostsRepositoryTest.java
  com.jojoidu.book.springboot.domain.posts.PostsRepositoryTest
+com/jojoidu/book/springboot/web/HelloControllerTest.java
+ com.jojoidu.book.springboot.web.HelloControllerTest
 com/jojoidu/book/springboot/Application.java
  com.jojoidu.book.springboot.Application
-com/jojoidu/book/springboot/web/PostsApiControllerTest.java
- com.jojoidu.book.springboot.web.PostsApiControllerTest

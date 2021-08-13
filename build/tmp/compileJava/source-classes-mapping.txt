@@ -1,11 +1,20 @@
+com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java
+ com.jojoidu.book.springboot.config.auth.dto.OAuthAttributes
+ com.jojoidu.book.springboot.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
+com/jojoidu/book/springboot/config/auth/SecurityConfig.java
+ com.jojoidu.book.springboot.config.auth.SecurityConfig
 com/jojoidu/book/springboot/web/IndexController.java
  com.jojoidu.book.springboot.web.IndexController
+com/jojoidu/book/springboot/config/auth/LoginUser.java
+ com.jojoidu.book.springboot.config.auth.LoginUser
 com/jojoidu/book/springboot/web/dto/PostsSaveRequestDto.java
  com.jojoidu.book.springboot.web.dto.PostsSaveRequestDto
  com.jojoidu.book.springboot.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
 com/jojoidu/book/springboot/domain/posts/Posts.java
  com.jojoidu.book.springboot.domain.posts.Posts
  com.jojoidu.book.springboot.domain.posts.Posts$PostsBuilder
+com/jojoidu/book/springboot/config/auth/dto/SessionUser.java
+ com.jojoidu.book.springboot.config.auth.dto.SessionUser
 com/jojoidu/book/springboot/web/dto/PostsListResponseDto.java
  com.jojoidu.book.springboot.web.dto.PostsListResponseDto
 com/jojoidu/book/springboot/service/posts/PostsService.java
@@ -14,16 +23,31 @@ com/jojoidu/book/springboot/Application.java
  com.jojoidu.book.springboot.Application
 com/jojoidu/book/springboot/web/dto/PostsResponseDto.java
  com.jojoidu.book.springboot.web.dto.PostsResponseDto
+com/jojoidu/book/springboot/domain/user/User.java
+ com.jojoidu.book.springboot.domain.user.User
+ com.jojoidu.book.springboot.domain.user.User$UserBuilder
 com/jojoidu/book/springboot/web/PostsApiController.java
  com.jojoidu.book.springboot.web.PostsApiController
 com/jojoidu/book/springboot/web/dto/PostsUpdateRequestDto.java
  com.jojoidu.book.springboot.web.dto.PostsUpdateRequestDto
  com.jojoidu.book.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
+com/jojoidu/book/springboot/domain/user/UserRepository.java
+ com.jojoidu.book.springboot.domain.user.UserRepository
 com/jojoidu/book/springboot/domain/BaseTimeEntity.java
  com.jojoidu.book.springboot.domain.BaseTimeEntity
+com/jojoidu/book/springboot/config/auth/LoginUserArgumentResolver.java
+ com.jojoidu.book.springboot.config.auth.LoginUserArgumentResolver
+com/jojoidu/book/springboot/config/WebConfig.java
+ com.jojoidu.book.springboot.config.WebConfig
+com/jojoidu/book/springboot/domain/user/Role.java
+ com.jojoidu.book.springboot.domain.user.Role
+com/jojoidu/book/springboot/config/auth/CustomOAuth2UserService.java
+ com.jojoidu.book.springboot.config.auth.CustomOAuth2UserService
 com/jojoidu/book/springboot/web/dto/HelloResponseDto.java
  com.jojoidu.book.springboot.web.dto.HelloResponseDto
 com/jojoidu/book/springboot/domain/posts/PostsRepository.java
  com.jojoidu.book.springboot.domain.posts.PostsRepository
 com/jojoidu/book/springboot/web/HelloController.java
  com.jojoidu.book.springboot.web.HelloController
+com/jojoidu/book/springboot/config/JpaConfig.java
+ com.jojoidu.book.springboot.config.JpaConfig
