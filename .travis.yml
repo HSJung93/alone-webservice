@@ -13,6 +13,22 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  - zip -r alone-springboot2-webservice
+  - mkdir -p deploy
+  - mv alone-springboot2-webservice.zip deploy/alone-springboot2-webservice.zip
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: alone-springboot-build
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private
+    local_dir: deploy
+    wait-until-deployed: true
+
 notifications:
   email:
     recipients:
