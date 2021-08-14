@@ -1,6 +1,6 @@
 package com.jojoidu.book.springboot.web.dto;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat; // vs junit...assertThat 1) 추가적인 라이브러리(CoreMatchers)가 필요가 없다.
 
 public class HelloResponseDtoTest {

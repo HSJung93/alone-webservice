@@ -1,6 +1,6 @@
 package com.jojoidu.book.springboot.web;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.mock.env.MockEnvironment;
 
 import static org.assertj.core.api.Assertions.assertThat;

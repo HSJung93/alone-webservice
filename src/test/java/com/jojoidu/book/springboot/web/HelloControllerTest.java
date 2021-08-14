@@ -1,14 +1,14 @@
 package com.jojoidu.book.springboot.web;
 
 import com.jojoidu.book.springboot.config.auth.SecurityConfig;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import static org.hamcrest.Matchers.is;
 
-@ExtendWith(SpringExtension.class) // Junit에 내장된 실행자 아니라 SpringExtension라는 스프링 실행자를 사용하게 하여 스프링부트 테스트와 JUnit의 연결자 역할을 한다.
+@RunWith(SpringRunner.class) // Junit에 내장된 실행자 아니라 SpringRunner라는 스프링 실행자를 사용하게 하여 스프링부트 테스트와 JUnit의 연결자 역할을 한다.
 @WebMvcTest(controllers = HelloController.class,
     excludeFilters = {
         @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,
