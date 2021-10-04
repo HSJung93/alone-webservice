@@ -25,7 +25,7 @@ public class User extends BaseTimeEntity {
     @Column
     private String picture;
 
-    @Enumerated(EnumType.STRING) // Enum값을 어떤 형태로 저장할지 결정. 기본값은 int
+    @Enumerated(EnumType.STRING) // Enum값을 어떤 형태로 저장할지 결정. 기본값은 init. 숫자로 저장되면 db로 확인할 때 문제가 생긴다.
     @Column(nullable = false)
     private Role role;
 

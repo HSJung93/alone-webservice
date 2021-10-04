@@ -62,6 +62,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
+    // 인증된 모의 사용자를 만들어서 사용한다. 
     @WithMockUser(roles="USER")
     public void Posts_등록됩니다() throws Exception{
 

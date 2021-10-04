@@ -19,6 +19,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
+    // 테스트간 데이터 침범을 막는다.
     @After // 단위 테스트가 끝날 때마다 수행되는 메소드 지정
     public void cleanup(){ // 배포 전 전체 테스트를 수행할 때 테스트간 데이터 침법을 막기 위해 사용
         postsRepository.deleteAll();

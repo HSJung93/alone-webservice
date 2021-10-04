@@ -1,7 +1,9 @@
 package com.jojoidu.book.springboot.web.dto;
 
 import org.junit.Test;
-import static org.assertj.core.api.Assertions.assertThat; // vs junit...assertThat 1) 추가적인 라이브러리(CoreMatchers)가 필요가 없다.
+// Junit의 기본 assertThat 보다 assertj의 assertThat 사용
+// 추가적인 라이브러리(CoreMatchers)가 필요가 없다.
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
 
@@ -13,7 +15,8 @@ public class HelloResponseDtoTest {
 
         HelloResponseDto dto = new HelloResponseDto(name, amount);
 
-        assertThat(dto.getName()).isEqualTo(name); // 검증하고자 하는 대상을 메소드 인자로받는 검증 메소드
+        // assertThat은 검증하고자 하는 대상을 메소드 인자로받는 검증 메소드
+        assertThat(dto.getName()).isEqualTo(name);
         assertThat(dto.getAmount()).isEqualTo(amount);
     }
 }

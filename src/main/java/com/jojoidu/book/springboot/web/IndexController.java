@@ -20,11 +20,13 @@ public class IndexController {
     private final PostsService postsService;
     private final HttpSession httpSession;
 
-    // Model 서버 템플릿 엔진에서 사용할 수 있는 객체 저장
+    // Model로 서버 템플릿 엔진에서 사용할 수 있는 객체를 저장할 수 있다.
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
+        // @LoginUser 어노테이션으로 메소드 인자로 세션 값을 바로 받는다.
 //        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        // 세션에 저장된 값이 있을 때만 modle에 userName으로 등록한다.
         if (user != null) {
             model.addAttribute("userName", user.getName());
         }

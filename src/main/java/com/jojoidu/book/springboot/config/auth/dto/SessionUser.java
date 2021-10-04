@@ -5,6 +5,7 @@ import lombok.Getter;
 
 import java.io.Serializable;
 
+// 직렬화 기능을 구현한 SessionUser
 @Getter
 public class SessionUser implements Serializable {
     private String name;
