@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+// 무중단 배포 실험
 @EnableJpaAuditing
 // 이 어노테이션부터 설정을 읽어가기 때문에 프로젝트의 최상단에 있어야 한다.
 // 스프링 Bean 읽기와 생성 등 자동 설정을 해준다.
