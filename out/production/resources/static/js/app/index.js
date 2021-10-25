@@ -1,3 +1,4 @@
+// api를 호출하는 js
 var main = {
     // 변수의 속성으로 function을 추가해서 함수 오버라이딩을 방지한다. var index라는 객체를 만들어 해당 객체에 필요한 모든 function을 선언하는 것. function의 유효범위가 index 객체 안으로만 제한된다. 
     init : function () {
