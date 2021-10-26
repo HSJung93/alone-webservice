@@ -18,38 +18,39 @@ script: "./gradlew clean build"
 #  - mkdir -p deploy
 #  - mv alone-springboot2-webservice.zip deploy/alone-springboot2-webservice.zip
 
-before_deploy:
-  - mkdir -p before-deploy
-  - cp scripts/*.sh before-deploy/
-  - cp appspec.yml before-deploy/
-  - cp build/libs/*.jar before-deploy/
-  - cd before-deploy && zip -r before-deploy *
-  - cd ../ && mkdir -p deploy
-  - mv before-deploy/before-deploy.zip deploy/alone-springboot2-webservice.zip
-
-deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: alone-springboot-build
-    region: ap-northeast-2
-    skip_cleanup: true
-    acl: private
-    local_dir: deploy
-    wait-until-deployed: true
-
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: alone-springboot-build
-    key: alone-springboot2-webservice.zip
-    bundle_type: zip
-    application: alone-springboot2-webservice
-    deployment_group: alone-springboot2-webservice-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-
-notifications:
-  email:
-    recipients:
-      - jrps2212@gmail.com
+# test
+#before_deploy:
+#  - mkdir -p before-deploy
+#  - cp scripts/*.sh before-deploy/
+#  - cp appspec.yml before-deploy/
+#  - cp build/libs/*.jar before-deploy/
+#  - cd before-deploy && zip -r before-deploy *
+#  - cd ../ && mkdir -p deploy
+#  - mv before-deploy/before-deploy.zip deploy/alone-springboot2-webservice.zip
+#
+#deploy:
+#  - provider: s3
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KEY
+#    bucket: alone-springboot-build
+#    region: ap-northeast-2
+#    skip_cleanup: true
+#    acl: private
+#    local_dir: deploy
+#    wait-until-deployed: true
+#
+#  - provider: codedeploy
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KEY
+#    bucket: alone-springboot-build
+#    key: alone-springboot2-webservice.zip
+#    bundle_type: zip
+#    application: alone-springboot2-webservice
+#    deployment_group: alone-springboot2-webservice-group
+#    region: ap-northeast-2
+#    wait-until-deployed: true
+#
+#notifications:
+#  email:
+#    recipients:
+#      - jrps2212@gmail.com
