@@ -10,7 +10,7 @@ IDLE_PORT=$(find_idle_port)
 echo "> Health Check Start!"
 echo "> IDLE_PORT: $IDLE_PORT"
 echo "> curl -s http://localhost:$IDLE_PORT/profile "
-sleep 10
+sleep 1
 
 for RETRY_COUNT in {1..10}
 do
